@@ -4,9 +4,9 @@ Files for Poligonija web page in hugo.
 
 ### Installation
 
-1) Install Scoop package manager (https://scoop.sh/)
+#### Install Scoop package manager (https://scoop.sh/)
 
-##Installs in seconds
+Installs in seconds
 Make sure Powershell 3 (or later) and .NET Framework 4.5 (or later) are installed. Then run in powershell:
 
     iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
@@ -14,7 +14,7 @@ Make sure Powershell 3 (or later) and .NET Framework 4.5 (or later) are installe
 Note: if you get an error you might need to change the execution policy (i.e. enable Powershell) with Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
 
-2) Installing Hugo
+#### Installing Hugo
 If you are on macOS and using Homebrew, you can install Hugo with the following one-liner:
 
 	brew install hugo
