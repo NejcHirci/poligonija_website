@@ -1,22 +1,8 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href={{}}"css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
-
-    <title>Horizontal Timeline | CodyHouse</title>
-</head>
-<body>
 <section class="cd-horizontal-timeline">
     <div class="timeline">
         <div class="events-wrapper">
             <div class="events">
                 <ol>
-                    {{range .Site.Params.URLs}}
                     <li><a href="#0" data-date="16/01/2014" class="selected"></a></li>
                     <li><a href="#0" data-date="28/02/2014"></a></li>
                     <li><a href="#0" data-date="20/04/2014"></a></li>
@@ -28,6 +14,7 @@
                     <li><a href="#0" data-date="10/12/2014"></a></li>
                     <li><a href="#0" data-date="19/01/2015"></a></li>
                     <li><a href="#0" data-date="03/03/2015"></a></li>
+
                 </ol>
 
                 <span class="filling-line" aria-hidden="true"></span>
@@ -130,8 +117,9 @@
                     </p>
                 </li>
             </ol> -->
-    </div> <!-- .events-content -->
-    <script src="js/jquery-2.1.4.js"></script>
-    <script src="js/jquery.mobile.custom.min.js"></script>
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
+        </ol> <!-- .events-content -->
+    </div>
+    <script src={{"plugins/HorizontalSlider/js/jquery-2.1.4.js" | absURL}}></script>
+    <script src={{"plugins/HorizontalSlider/js/jquery.mobile.custom.min.js" | absURL }}></script>
+    <script src={{"plugins/HorizontalSlider/js/main.js" | absURL }}></script> <!-- Resource jQuery -->
 </section>

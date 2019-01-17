@@ -1,10 +1,7 @@
-<html>
-{{- partial "header.html" . -}}
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "header.html" .}}
 <body>
-{{- partial "navigation.html" . -}}
-<div id="content">
-    {{- block "main" . }}{{- end }}
-</div>
-{{- partial "footer.html" . -}}
+    {{ block "main" . }}{{end}}
 </body>
 </html>
