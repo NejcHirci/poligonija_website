@@ -1,0 +1,33 @@
+{{define "main"}}
+
+<section class="panel home" data-section-name="home" style="height: 731px;">
+    <div class="inner">
+        <div class="vertical-center">
+            <h1>Pagination</h1>
+            <p>Simple navigation for Scrollify sections.</p>
+            <p class="cta"><a href="/scrollify#examples" class="arrow">See more examples</a></p>
+        </div>
+    </div>
+    <ul class="pagination">
+        <li><a class="active" href="#home"><span class="hover-text">Home</span></a></li>
+    {{range .Pages}}
+        <li><a class="" href="#{{.Title}}"><span class="hover-text">{{.Title}}</span></a></li>
+    {{end}}
+    </ul>
+</section>
+
+{{range .Pages }}
+<section class="panel {{.Title}}" data-sectio,,n-name="{{.Title}}">
+    <div class="inner">
+        <div class="vertical-center">
+            <h1>Pagination</h1>
+            <p>{{.Content}}</p>
+            <p class="cta"><a href="/scrollify#examples" class="arrow">See more examples</a></p>
+        </div>
+    </div>
+
+</section>
+{{end}}
+
+
+{{end}}
