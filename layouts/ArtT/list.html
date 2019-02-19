@@ -1,14 +1,14 @@
 {{define "main"}}
 
-<section class="panel home" data-section-name="home" style="height: 731px;">
+<section class="slide home" data-section-name="home" style="height: 731px;">
     <div class="inner">
         <div class="vertical-center">
-            <h1>Pagination</h1>
+            <h1>paginate</h1>
             <p>Simple navigation for Scrollify sections.</p>
             <p class="cta"><a href="/scrollify#examples" class="arrow">See more examples</a></p>
         </div>
     </div>
-    <ul class="pagination">
+    <ul class="paginate" id="#paginate">
         <li><a class="active" href="#home"><span class="hover-text">Home</span></a></li>
     {{range .Pages}}
         <li><a class="" href="#{{.Title}}"><span class="hover-text">{{.Title}}</span></a></li>
@@ -17,10 +17,10 @@
 </section>
 
 {{range .Pages }}
-<section class="panel {{.Title}}" data-sectio,,n-name="{{.Title}}">
+<section class="slide {{.Title}}" data-section-name="{{.Title}}">
     <div class="inner">
         <div class="vertical-center">
-            <h1>Pagination</h1>
+            <h1>paginate</h1>
             <p>{{.Content}}</p>
             <p class="cta"><a href="/scrollify#examples" class="arrow">See more examples</a></p>
         </div>

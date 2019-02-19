@@ -1,19 +1,19 @@
 $(function() {
     $.scrollify({
-        section:".panel",
+        section:".slide",
         scrollbars:false,
         before:function(i,panels) {
 
             var ref = panels[i].attr("data-section-name");
 
-            $(".pagination .active").removeClass("active");
+            $(".paginate .active").removeClass("active");
 
-            $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+            $(".paginate").find("a[href=\"#" + ref + "\"]").addClass("active");
         },
         afterRender:function() {
-            var pagination = "<ul class=\"pagination\">";
+            var pagination = "<ul class=\"paginate\">";
             var activeClass = "";
-            $(".panel").each(function(i) {
+            $(".slide").each(function(i) {
                 activeClass = "";
                 if(i===0) {
                     activeClass = "active";
@@ -33,7 +33,7 @@ $(function() {
             });
 
             */
-            $(".pagination a").on("click",$.scrollify.move);
+            $(".paginate a").on("click",$.scrollify.move);
         }
     });
 });
