@@ -1,7 +1,15 @@
 $(function() {
     $.scrollify({
-        section:".slide",
-        scrollbars:false,
+        section : ".slide",
+        interstitialSection : "",
+        easing: "easeOutExpo",
+        scrollSpeed: 1100,
+        offset : 0,
+        scrollbars: true,
+        setHeights: true,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll:true,
         before:function(i,panels) {
 
             var ref = panels[i].attr("data-section-name");
@@ -34,6 +42,7 @@ $(function() {
 
             */
             $(".paginate a").on("click",$.scrollify.move);
+
         }
     });
 });

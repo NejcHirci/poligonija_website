@@ -1,5 +1,29 @@
-{{ define "main" }}
+{{define "main"}}
 
-{{ partial "horizontal.html" . }}
+<section class="slide home" data-section-name="home" style="height: 731px;">
+    <div class="inner">
+        {{partial "horizontal.html" . }}
+    </div>
+    <ul class="paginate" id="#paginate">
+        <li><a class="active" href="#home"><span class="hover-text">Home</span></a></li>
+        {{range .Pages}}
+        <li><a class="" href="#{{.Title}}"><span class="hover-text">{{.Title}}</span></a></li>
+        {{end}}
+    </ul>
+</section>
 
-{{ end }}
+{{range .Pages }}
+<section class="slide {{.Title}}" data-section-name="{{.Title}}">
+    <div class="inner">
+        <div class="vertical-center">
+            <h1>paginate</h1>
+            <p>{{.Content}}</p>
+            <p class="cta"><a href="/scrollify#examples" class="arrow">See more examples</a></p>
+        </div>
+    </div>
+
+</section>
+{{end}}
+
+
+{{end}}
