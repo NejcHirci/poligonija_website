@@ -4,5 +4,27 @@
     <body>
 
     {{ block "main" . }}{{end}}
+
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //options here
+                navigation: true,
+                autoScrolling: true,
+                navigationPosition: 'right',
+
+                onLeave: function (origin, destination, direction) {
+                    console.log(destination.index);
+                    if(origin.index == 0 && direction == 'down'){
+                        $('#fp-nav').fadeIn(200);
+                    }
+                    else if(origin.index == 1 && direction == 'up'){
+                        $('#fp-nav').fadeOut(200);
+                    }
+                }
+            });
+            $('#fp-nav').fadeOut(100);
+        });
+    </script>
 </body>
 </html>

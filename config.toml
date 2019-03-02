@@ -1,3 +1,16 @@
 baseURL = "https://poligonija.github.io/"
 LanguageCode = "sl-SI"
 Title = "Poligonija"
+
+
+[params]
+
+    [[params.heading]]
+    title = "Transhumanizem"
+    url = "/1"
+
+    [[params.heading]]
+    title = "Umetnost in tehnologija"
+    url = "/2"
+
+

@@ -1,19 +1,23 @@
 {{define "main"}}
 
-<section class="slide home" data-section-name="home" style="height: 731px;">
-    <div class="inner">
-        {{partial "horizontal.html" . }}
+<div id="fullpage">
+
+<div class="section home">
+    {{range .Site.Params.heading}}
+    <div class="slide Tekst7">
+        <div class="inner">
+            <div class="vertical-center">
+                <h1>paginate</h1>
+                <p>{{.name}}</p>
+                <p class="cta"><a href="/scrollify#examples" class="arrow">See more examples</a></p>
+            </div>
+        </div>
     </div>
-    <ul class="paginate" id="#paginate">
-        <li><a class="active" href="#home"><span class="hover-text">Home</span></a></li>
-        {{range .Pages}}
-        <li><a class="" href="#{{.Title}}"><span class="hover-text">{{.Title}}</span></a></li>
-        {{end}}
-    </ul>
-</section>
+    {{end}}
+</div>
 
 {{range .Pages }}
-<section class="slide {{.Title}}" data-section-name="{{.Title}}">
+<div class="section {{.Title}}" data-section-name="{{.Title}}">
     <div class="inner">
         <div class="vertical-center">
             <h1>paginate</h1>
@@ -22,8 +26,10 @@
         </div>
     </div>
 
-</section>
+</div>
 {{end}}
+
+</div>
 
 
 {{end}}

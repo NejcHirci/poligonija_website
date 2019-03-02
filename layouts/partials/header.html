@@ -5,17 +5,13 @@
     {{ .Hugo.Generator }}
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href={{"plugins/HorizontalSlider/css/reset.css" | absURL}}> <!-- CSS reset -->
-    <link rel="stylesheet" href={{"plugins/HorizontalSlider/css/style.css" | absURL }}> <!-- Resource style -->
     <link rel="stylesheet" href={{"plugins/bootstrap/css/bootstrap.min.css" | absURL}}><!-- Bootstrap styles -->
     <link rel="stylesheet" href={{"css/test.css" | absURL}}> <!-- Css test -->
-    <script src={{"plugins/HorizontalSlider/css/modernizr.js" | absURL}}></script> <!-- Modernizr -->
     <script src={{"js/jquery-3.3.1.js" | absURL}}></script>   <!-- jQuery -->
-    <script src={{"plugins/jquery-scrollify/jquery.scrollify.js" | absURL}}></script> <!-- Scrollify -->
     <script src={{"js/barba.min.js" | absURL}} type="text/javascript"></script> <!-- Barba.js -->
     <title>{{ .Site.Title }}</title>
-    <script src={{"js/test.js" | absURL}}></script>
-    <script src={{"plugins/HorizontalSlider/js/main.js" | absURL }}></script> <!-- Resource jQuery -->
+    <link rel="stylesheet" type="text/css" href={{"plugins/fullpageJS/fullpage.css" | absURL }}/> <!-- Fullpage.js css resources -->
+    <script type="text/javascript" src={{"plugins/fullpageJS/fullpage.js" | absURL }}></script> <!-- Fullpage.js -->
     <!-- TODO Implement Barba.js for reload between horizontal and vertical slider. -->
 
 </head>
