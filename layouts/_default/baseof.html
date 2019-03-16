@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     {{ partial "header.html" .}}
-    <body>
+    <body style="background: black">
 
     {{ block "main" . }}{{end}}
 
     <script>
         $(document).ready(function() {
+            if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
+                $.fn.fullpage.destroy('all');
+            }
             $('#fullpage').fullpage({
                 //options here
                 navigation: true,
+                recordHistory: true,
                 autoScrolling: true,
                 navigationPosition: 'right',
+                slidesNavigation: true,
+                anchors: ['home', 'tekst1', 'tekst2', 'tekst3', 'tekst4', 'tekst5', 'tekst6', 'tekst7'],
 
                 onLeave: function (origin, destination, direction) {
                     console.log(destination.index);
@@ -24,6 +30,8 @@
                 }
             });
             $('#fp-nav').fadeOut(100);
+
+            Barba.Pjax.start();
         });
     </script>
 </body>
