@@ -24,10 +24,12 @@
                     if(origin.index == 0 && direction == 'down'){
                         $('#fp-nav').delay(400).fadeIn(500);
                         $('#arrowDown').fadeOut(200);
+                        jQuery("#mainLogo span").animate({color:"#000000"},600);
                     }
                     else if(origin.index == 1 && direction == 'up'){
                         $('#fp-nav').fadeOut(200);
                         $('#arrowDown').delay(400).fadeIn(500);
+                        jQuery("#mainLogo span").animate({color:"#ffffff"},600);
                     }
                 }
             });

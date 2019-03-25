@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div>
-            {{ range (where .Site.Pages "Type" "tekst") }}
+            {{ range (where .Pages "Section" "scifi") }}
             <div class="section rest">
                 <div class="vertical-center">
                     <div class="container">
@@ -49,6 +49,7 @@
             </div>
             {{end}}
         </div>
+        <div id="mainLogo"><span style="font-family: Lora">POLIGONIJA</span></div>
         <div id="arrowDown"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></div>
     </div>
 </div>
