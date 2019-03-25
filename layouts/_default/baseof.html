@@ -17,21 +17,25 @@
                 autoScrolling: true,
                 navigationPosition: 'right',
                 slidesNavigation: true,
-                anchors: ['home', 'tekst1', 'tekst2', 'tekst3', 'tekst4', 'tekst5', 'tekst6', 'tekst7'],
+                slidesNavPosition: 'top',
 
                 onLeave: function (origin, destination, direction) {
                     console.log(destination.index);
                     if(origin.index == 0 && direction == 'down'){
-                        $('#fp-nav').fadeIn(200);
+                        $('#fp-nav').delay(400).fadeIn(500);
+                        $('#arrowDown').fadeOut(200);
                     }
                     else if(origin.index == 1 && direction == 'up'){
                         $('#fp-nav').fadeOut(200);
+                        $('#arrowDown').delay(400).fadeIn(500);
                     }
                 }
             });
             $('#fp-nav').fadeOut(100);
 
-            Barba.Pjax.start();
+            $('#arrowDown').click(function(){
+                $.fn.fullpage.moveSectionDown();
+            });
         });
     </script>
 </body>

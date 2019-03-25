@@ -1,46 +1,55 @@
-{{define "main" }}
-<div class="row mx-auto" style="max-width: 95vw">
-    <div class="col-md-1"><img id="logo" class="img-fluid" src="{{ "images/Logo-white.svg" | absURL}}"></div>
-    <div class="col-md-7"></div>
-    <div id="logos" class="col-md-3 col-sm-3">{{ partial "sponsors.svg" . }}</div>
-</div>
-<div class="container">
-<div class="row">
-    <div class="col-md-10 naslov">
-        <div class="mb-5 mt-5">
-            <h1>POLIGONIJA</h1>
+{{define "main"}}
+<div id="barba-wrapper">
+    <div class="barba-container">
+        <div id="fullpage">
+            <div class="section home">
+                <div class="slide home">
+                    <div class="container">
+                        <div class="row" style="display: flex;align-items: center;justify-content: center">
+                            <div class="col-md-5">
+                                <h1 class="Left-title">{{.Title}}</h1>
+                            </div>
+                            <div class="col-md-1">
+                                <img src="{{ "images/SVG/Asset%201.svg" | absURL }}" class="line">
+                            </div>
+                            <div class="col-md-5">
+                                <h2 id="avtorji">Dr.Hawkins, Dr.Monroe</h2>
+                                <p class="opis">{{.Content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ range (where .Site.Pages "Type" "tekst") }}
+            <div class="section rest">
+                <div class="vertical-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="title">{{.Params.name}}</h1>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 20px; margin-bottom: 10px;">
+                            <div class="col-md-12">
+                                <h2 class="names">{{.Params.Author}}</h2>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 30px; margin-top: 25px">
+                            <div class="col-md-12">
+                                <h2 class="text text-left">{{.Content}}</h2>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <a href="{{.Permalink}}"><h3 class="ReadMore">Preberite več.</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{end}}
         </div>
-    </div>
-    <div class="col-md-11 mx-auto">
-        <p class="mb-4 intro">
-            <span class="first-char">P</span>oligonija je interdisciplinarni projekt, ustanovljen pod okriljem društva KUD Anarhiv. Temelji na humanističnem preučevanju različnih družbenih problematik. Zasnovan je bil z željo ustvarjanja platforme za neinstitucionalen, interaktiven diskurz o različnih fenomenih, ki zaznamujejo našo družbo.
-        </p>
-        <aside class="pquote mb-4 mx-auto col-md-7" style="padding-left:10px;float:right;">
-            <blockquote>
-                <p>Projekt združuje študente različnih smeri, ki želijo misliti in razpravljati o sodobnem svetu in njegovih problematikah.</p>
-            </blockquote>
-        </aside>
-        <p class="mb-4">
-            Projekt združuje študente različnih smeri, ki želijo misliti in razpravljati o sodobnem svetu in njegovih problematikah. Izvajamo predavanja, branja in pogovore, katerim z željo po odpiranju diskurza sledi diskusija s publiko. Izraz poligon, ki nudi osnovo za imenovanje skupine, etimološko konstruirata termina polles in gones, ki v klasični grščini pomenita več kotov, v sodobni grščini pa odražata naravo projekta: več pogledov.
-        </p>
-        <p class="mb-4">
-            Projekt je svojo krstno izvedbo doživel maja 2018 s predavanjem, naslovljenim Poligonija – Spomini preteklosti / / Monoliti sedanjosti, na katerem smo predstavili različne poglede na tematiko spomenikov. Govorili smo o literarnih spomenikih, o funkciji spomenikov in o njihovi moči. To pomlad se v sodelovanju s študenti FAM-a v okviru projekta ŠIPK pripravlja cikel dogodkov na temo znanstvene fantastike in transhumanizma. Ukvarjali se bomo z medsebojnim vplivom umetniške produkcije in tehnologije.
-        </p>
-        <p class="mb-4">
-            V sodobnem svetu predstavlja tehnologija eno izmed integralnih vodil družbe. Kljub temu ključnemu pomenu, pa danes opažamo vse večji odpor do tehnologije in problematiziranje vprašanja odnosa med človekom in tehnologijo. Slednja je namreč v svojem razvoju dosegla nepredstavljivo hitrost, ki se –mnogim, tako konzumentom kot producentom, zdi neobvladljiva. Kolosalna podoba sodobne tehnologije odpira vedno nova vprašanja in fronte mišljenja. Kljub temu, da tehnologija in družba stremita naprej, se nam danes, ko je prihodnost, kot piše angleški kritik  Mark Fisher, ukinjena, zdi ključen kritičen pogled nazaj in razmislek o vplivih na sedanjost.
-        </p>
-        <aside class="col-md-7 mb-4 mx-auto" style="float:left;">
-            <blockquote>
-                <p>Kako misliti umetnost v dobi, ko grozi človeku zamenljivost? Ali je prihodnost, če ta obstaja, prihodnost brez človeka? </p>
-            </blockquote>
-        </aside>
-        <p class="mb-4">
-            Kljub ukinjeni prihodnosti, se danes snuje in širi filozofija transhumanizma, ki ponuja vizijo prihodnosti brez človeka. Ali je to legitimna smer razmisleka, ki odpira vprašanje samoumevnosti človeka? Skozi kritičen vpogled bomo poskusili slojevito predelati problematiko ter poiskati tudi aplikativne in efektivne ideje, ki nam lahko pomagajo razumeti tehnologijo, ki nas obdaja. Kolikšen vpliv je imela človeška umetniška produkcija na snovanje prihodnosti? Kakšen vpliv ima tehnologija na umetniško produkcijo danes? Kako misliti umetnost v dobi, ko človeku grozi zamenljivost? Ali je prihodnost, če ta obstaja, prihodnost brez človeka? Ali res tekmujemo s tehnologijo? To je le nekaj vprašanj, ki si jih bomo zastavljali tekom te pomladi.
-        </p>
+        <div id="arrowDown"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></div>
     </div>
 </div>
-<div class="row">
-
-</div>
-</div>
-{{ end }}
+{{end}}

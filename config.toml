@@ -2,6 +2,8 @@ baseURL = "https://poligonija.github.io/"
 LanguageCode = "sl-SI"
 Title = "Poligonija"
 
+[permalinks]
+    scifi = "/scifi/:title/"
 
 [params]
 
