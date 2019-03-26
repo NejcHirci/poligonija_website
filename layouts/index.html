@@ -1,6 +1,4 @@
 {{define "main"}}
-<div id="barba-wrapper">
-    <div class="barba-container">
         <div id="fullpage">
             <div class="section home">
                 <div class="slide home">
@@ -13,7 +11,6 @@
                                 <img src="{{ "images/SVG/Asset%201.svg" | absURL }}" class="line">
                             </div>
                             <div class="col-md-5">
-                                <h2 id="avtorji">Dr.Hawkins, Dr.Monroe</h2>
                                 <p class="opis">{{.Content}}</p>
                             </div>
                         </div>
@@ -49,8 +46,9 @@
             </div>
             {{end}}
         </div>
-        <div id="mainLogo"><span style="font-family: Lora">POLIGONIJA</span></div>
-        <div id="arrowDown"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></div>
-    </div>
-</div>
+
+<div id="about"><a href="/o-nas">O nas</a></div>
+<div id="mainLogo"><span style="font-family: Lora">POLIGONIJA</span></div>
+<div id="social"><a href="https://www.facebook.com/Poligonija-382655652330224/" ><i class="fab fa-facebook-f" style="margin-right: 15px"></i></a><a href="https://www.instagram.com/poligonija/" ><i class="fab fa-instagram"></i></a></div>
+<div id="arrowDown"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></div>
 {{end}}

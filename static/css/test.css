@@ -62,7 +62,7 @@ h2 {
 	font-size:8em;
 }
 p {
-	font-size: 2.5em;
+	font-size: 2em;
 	line-height:1.7;
 }
 h2 + p {
@@ -334,16 +334,47 @@ blockquote:after{
 	content: "\201C";
 	font-size: 80px;
 	position: absolute;
-	right: 40px;
+	right: 20px;
 	bottom: -60px;
 	color: #7a7a7a;
 }
 
-#mainLogo{
-	font-size: 40px;
+#mainLogo, #about, #social{
 	position: fixed;
 	z-index: 99;
 	cursor: pointer;
+	top:20px;
+}
+#about{
+	left: 25px;
+	font-size: 25px;
+}
+
+
+
+#about a,#social a{
+	color: white;
+}
+#about a:hover,#social a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+#social{
+	right: 25px;
+	font-size: 25px;
+}
+
+
+.button{
+	background-color: transparent !important;
+	background-repeat:no-repeat !important;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+}
+#mainLogo{
+	font-size: 40px;
 	left:50%;
 	text-align: center;
 	width:auto;
