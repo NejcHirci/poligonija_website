@@ -52,7 +52,7 @@ table {
 body {
 	color:white;
 	font-size:62.5%;
-	font-family: 'Lora', sans-serif;
+	font-family: 'Gentium Book Basic', serif;
 }
 h1 {
 	font-size:13em;
@@ -233,8 +233,11 @@ h2 + p {
 	hyphens: auto;}
 
 .opis {color:white;
-	font-size: 20px;
 	margin-left:120px;}
+
+.opis p{
+	font-size: 30px !important;
+}
 
 #avtorji {padding-left: 115px;
 	padding-bottom: 40px;
@@ -266,16 +269,16 @@ h2 + p {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	text-align: left;
-	font-family:Acumin Variable Concept;
+	font-family:Lora sans-serif;
 	font-style:normal;
 	font-weight:150;
 	color: black;}
 
 .names {
 	font-size: 17px;
-	font-family:Constantia;
-	font-style:italic;
-	font-weight:600;
+	font-family:"Slabo 27px", Serif;
+	font-style:normal;
+	font-weight:400;
 	text-align: left;
 }
 
