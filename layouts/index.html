@@ -10,17 +10,19 @@
                     <img src="{{ "images/SVG/Asset%201.svg" | absURL }}" class="line">
                 </div>
                 <div class="col-md-5">
-                    <p class="opis">{{.Content}}</p>
+                    <p class="opis">
+                        {{ .Content }}
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     {{ range (where .Pages "Section" "scifi") }}
     <div class="section rest">
-        <div class="container">
+        <div class="container mobile-container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="title">{{.Params.name}}</h1>
+                    <h1 class="title" style="font-family: Montserrat">{{.Params.name}}</h1>
                 </div>
             </div>
             <div class="row" style="margin-top: 20px; margin-bottom: 10px;">

@@ -398,31 +398,75 @@ blockquote cite:before {
 	content: "\2014 \2009";
 }
 
+.singleTitle{
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+.singleSubTitle{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.singleMargin{
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 760px){
+
+    #fp-nav.fp-right{
+        right: 2px !important;
+    }
+
+    .text{
+        text-align: justify !important;
+    }
+    .mobile-container{
+        max-width: 90vw;
+    }
+    p {
+      font-size: 17px;
+    }
+    .singleTitle{
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    .singleSubTitle{
+        margin-bottom:0px;
+    }
 	.Left-title{
 
 	}
 	.opis{
 
 	}
+    blockquote p{
+        font-size: 1.5em !important;
+    }
 	blockquote{
-		font-size:1.4em;
+        padding: 1rem 15px;
 	}
 	blockquote:before{
-		font-size: 60px;
+		font-size: 40px;
 	}
 	blockquote:after{
-		font-size: 60px;
+		font-size: 40px;
+        right: 20px;
+        bottom: -30px;
 	}
 
 	.logo{
 		max-width: 90px;
 	}
 
+    #logo{
+        height:30px;
+        margin-top:10px;
+    }
+
 	#logos{
+        padding-left:0;
+        padding-right:0;
 		position: absolute;
-		top:17px;
-		right:-30px;
+		top:10px;
 	}
 	.sponsors{
 		max-height: 30px;
