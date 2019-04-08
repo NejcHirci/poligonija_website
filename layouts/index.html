@@ -1,12 +1,12 @@
 {{define "main"}}
-<div id="fullpage">
+<div id="fullpage" style="background:black; color:white;">
     <div class="section home">
         <div class="container home">
             <div class="row" style="display: flex;align-items: center;justify-content: center">
                 <div class="col-md-5">
                     <h1 class="Left-title">{{.Title}}</h1>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1 d-md-block d-none">
                     <img src="{{ "images/SVG/Asset%201.svg" | absURL }}" class="line">
                 </div>
                 <div class="col-md-5">
@@ -44,7 +44,7 @@
 </div>
 
 <div id="about"><a href="/o-nas">O nas</a></div>
-<div id="mainLogo"><span style="font-family: Lora">POLIGONIJA</span></div>
+<div id="mainLogo" class="d-md-block d-none"><span style="font-family: Lora;color:white;">POLIGONIJA</span></div>
 <div id="social"><a href="https://www.facebook.com/Poligonija-382655652330224/" ><i class="fab fa-facebook-f" style="margin-right: 15px"></i></a><a href="https://www.instagram.com/poligonija/" ><i class="fab fa-instagram"></i></a></div>
 <div id="arrowDown"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></div>
 {{end}}

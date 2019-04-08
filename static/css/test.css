@@ -50,7 +50,6 @@ table {
 /****** Main ********/
 
 body {
-	color:white;
 	font-size:62.5%;
 	font-family: 'Gentium Book Basic', serif;
 }
@@ -316,7 +315,7 @@ blockquote {
 	padding: 0.35em 40px;
 	line-height: 1.45;
 	position: relative;
-	color: #fff;
+	color: #000;
 }
 
 blockquote:before {
@@ -400,6 +399,12 @@ blockquote cite:before {
 }
 
 @media screen and (max-width: 760px){
+	.Left-title{
+
+	}
+	.opis{
+
+	}
 	blockquote{
 		font-size:1.4em;
 	}
