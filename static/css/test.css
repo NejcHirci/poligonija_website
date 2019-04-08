@@ -7,7 +7,7 @@
         right: 2px !important;
     }
     .Left-title{
-		margin: 17px 0px 30px 0px;
+		margin: 20px 0px 30px 0px;
 		text-align: left;
 	    width: 100%;
 	    font-size: 58px !important;
@@ -80,13 +80,16 @@
     }
 
 	#arrowDown{
-	bottom: 90px !important;
-	height: 15px;
+	bottom: 80px !important;
 }
-    #arrowDown img {height: 17px !important;}
+    #arrowDown img {height: 20px !important;}
 
 	.Horizont {background-color: white;
 	margin-bottom: 35px;}
+
+    .title{
+        font-size: 40px !important;
+    }
 
 }
 
