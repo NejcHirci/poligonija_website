@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    {{ range (where .Pages "Section" "scifi") }}
+    {{ range (where .Pages "Section" "scifi").ByDate }}
     <div class="section rest">
         <div class="container mobile-container">
             <div class="row">
@@ -32,8 +32,12 @@
                 </div>
             </div>
             <div class="row short-content">
-                <div class="col-md-12">
-                    <h2 class="text text-left">{{.Content}}</h2>
+                <div class="col-md-12" style="min-height: 160px;">
+                    <h2 class="text text-left">
+                        <div>{{.Params.Synopsis1}}</div>
+                        <br>
+                        <div>{{.Params.Synopsis2}}</div>
+                    </h2>
                 </div>
             </div>
             <div class="row text-center">
