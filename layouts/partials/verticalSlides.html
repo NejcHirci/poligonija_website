@@ -1,0 +1,28 @@
+<div class="section rest">
+    <div class="container mobile-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title" style="font-family: Montserrat">{{.Params.name}}</h1>
+            </div>
+        </div>
+        <div class="row authors">
+            <div class="col-md-12">
+                <h2 class="names">{{.Params.Author}}</h2>
+            </div>
+        </div>
+        <div class="row short-content">
+            <div class="col-md-12" style="min-height: 160px;">
+                <h2 class="text text-left">
+                    <div>{{.Params.Synopsis1}}</div>
+                    <br>
+                    <div>{{.Params.Synopsis2}}</div>
+                </h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h3 class="ReadMore"><a href="{{.Permalink}}">Preberite več.</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
