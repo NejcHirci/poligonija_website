@@ -8,15 +8,11 @@ Title = "Poligonija"
 [params]
 
     [[params.heading]]
-    title = "Transhumanizem"
-    url = "/transhuman"
-
-    [[params.heading]]
     title = "Umetnost in tehnologija"
-    url = "/art"
+    url = "/"
 
     [[params.heading]]
-    title = "Znanstvena fantastika"
-    url = "/events"
+    title = "SCI-FI in konec prihodnosti"
+    url = "/1"
 
 

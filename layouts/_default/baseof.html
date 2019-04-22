@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     {{ partial "header.html" .}}
-    <body>
-
-    {{ block "main" . }}{{end}}
-
+    <body data-barba="wrapper">
+            {{ block "main" . }}{{end}}
     </body>
 </html>

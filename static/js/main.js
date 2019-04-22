@@ -33,5 +33,13 @@ $(document).ready(function() {
     });
     $('#mainLogo').click(function () {
         $.fn.fullpage.moveTo(1);
-    })
+    });
+
+    barba.init({
+        transitions: [{
+            name: 'svg-circle'
+        },{
+            name: 'svg-slide'
+        }]
+    });
 });

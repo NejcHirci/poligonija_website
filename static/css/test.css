@@ -252,7 +252,30 @@ h2 + p {
     transform: translateX(-50%);
 	bottom: 40px;
 }
+
 #arrowDown img {height: 25px;}
+
+#arrowLeft, #arrowRight{
+	position: fixed;
+	z-index: 99;
+	cursor: pointer;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+#arrowRight img, #arrowLeft img{
+	height: 25px;
+}
+
+#arrowLeft{
+	left: 5px;
+	transform: rotate(90deg);
+}
+
+#arrowRight{
+	right:5px;
+	transform: rotate(-90deg);
+}
 
 .short-content{
 	margin-top: 30px;

@@ -1,5 +1,7 @@
 #!/bin/bash
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+# Git pull
+git pull
 # Build the project.
 hugo --ignoreCache # if using a theme, replace with `hugo -t <YOURTHEME>`
 # Go To Public folder
