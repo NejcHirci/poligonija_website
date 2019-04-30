@@ -216,7 +216,6 @@ h2 + p {
 .Left-title {color:white;
 	margin-right: 0px;
 	font-size: 5rem;
-	word-break: break-word;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
