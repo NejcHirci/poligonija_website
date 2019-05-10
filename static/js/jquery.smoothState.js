@@ -326,18 +326,22 @@
 
     /** Handles the popstate event, like when the user hits 'back' */
     onPopState = function ( e ) {
-      if(e.state !== null) {
+      if(e.state !== null || typeof e.state !== undefined) {
         var url = window.location.href,
           $page = $('#' + e.state.id),
-          page = $page.data('smoothState'),
-          diffUrl = (page.href !== url && !utility.isHash(url, page.href)),
-          diffState = (e.state !== page.cache[page.href].state);
+          page = $page.data('smoothState')
 
-        if(diffUrl || diffState) {
-          if (diffState) {
-            page.clear(page.href);
+        if(typeof (page) !== 'undefined' && typeof (page.cache[page.href]) !== 'undefined') {
+          var diffUrl = (page.href !== url && !utility.isHash(url, page.href)),
+              diffState = (e.state !== page.cache[page.href].state);
+          if (diffUrl || diffState) {
+            if (diffState) {
+              page.clear(page.href);
+            }
+            page.load(url, false);
           }
-          page.load(url, false);
+        } else {
+            location.reload();
         }
       }
     },

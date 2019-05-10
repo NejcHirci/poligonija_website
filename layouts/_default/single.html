@@ -1,4 +1,5 @@
 {{define "main" }}
+<div id="main white">
 
 {{partial "small-header.html" . }}
 
@@ -10,7 +11,7 @@
             </div>
         </div>
         <div class="col-md-10 col-12 naslov">
-            <div class="singleSubTitle">
+            <div class="singleSubTitle" style="margin-bottom: 15px">
                 <h2 class="names">{{ .Params.Author }}</h2>
             </div>
         </div>
@@ -18,5 +19,6 @@
             {{ .Content }}
         </div>
     </div>
+</div>
 </div>
 {{ end }}

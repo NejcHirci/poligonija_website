@@ -1,44 +1,49 @@
 {{define "main"}}
-{{ $index := .Params.index }}
+{{ $featured := .Site.GetPage .Site.Params.featured }}
+{{ $index := 0 }}
+{{ $title := $featured.Title }}
+{{ $tag := $featured.Params.tag }}
+{{ $right := $featured.Params.right }}
+{{ $opis := $featured.Content }}
 
 <div id="main">
     <div class="sceneElement" data-viewport="{{ $index }}">
-    <div id="fullpage" style="background:black; color:white;">
-        <div class="section home">
-            <div class="container home mobile-container">
-                <div class="row" style="display: flex;align-items: center;justify-content: center">
-                    <div class="col-md-5">
-                        <h1 class="Left-title">{{.Title}}</h1>
-                    </div>
-                    <div class="col-md-1 d-md-block d-none">
-                        <img src="{{ "images/SVG/Asset%201.svg" | absURL }}" class="line">
-                    </div>
-                    <div class="col-6 mx-auto d-md-none d-block"><hr class="Horizont"></div>
-                    <div class="col-md-5">
-                        <div class="opis">
-                            {{ .Content }}
+        <div id="fullpage" style="background:black; color:white;">
+            <div class="section home">
+                <div class="container home mobile-container">
+                    <div class="row" style="display: flex;align-items: center;justify-content: center">
+                        <div class="col-md-5">
+                            <h1 class="Left-title">{{ $title }}</h1>
+                        </div>
+                        <div class="col-md-1 d-md-block d-none">
+                            <img src="{{ "images/SVG/Asset%201.svg" | absURL }}" class="line">
+                        </div>
+                        <div class="col d-md-none d-block">
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="col-6"><hr class="Horizont"></div>
+                                <div class="col">{{ with $right }}<div id="arrowRight"><a id="href_next" href="{{.}}" data-target="{{add $index 1}}"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></a></div>{{end}}</div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="opis">
+                                {{ $opis }}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            {{ range (where .Pages "Sections" $tag).ByDate }}
+
+                {{ partial "verticalSlides.html" . }}
+
+            {{end}}
+
         </div>
-
-        {{ range (where .Pages "Sections" "art_in_tehno").ByDate }}
-
-        {{ partial "verticalSlides.html" . }}
-
-        {{end}}
-
-    </div>
     </div>
 
-    <div id="about"><a href="/o-nas">O nas</a></div>
-    <div id="mainLogo"><span style="font-family: Lora;color:white;">POLIGONIJA</span></div>
-    <div id="social"><a href="https://www.facebook.com/Poligonija-382655652330224/" ><i class="fab fa-facebook-f" style="margin-right: 15px"></i></a><a href="https://www.instagram.com/poligonija/" ><i class="fab fa-instagram"></i></a></div>
-
-    {{ with .Params.left }}<div id="arrowLeft"><a href="{{.}}" data-target="{{sub $index 1}}" ><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></a></div>{{end}}
-    {{ with .Params.right }}<div id="arrowRight"><a href="{{.}}" data-target="{{add $index 1}}"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></a></div>{{end}}
-    <div id="arrowDown"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></div>
+    {{ partial "navigation.html" $featured }}
 
 </div>
 

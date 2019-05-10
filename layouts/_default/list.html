@@ -1,0 +1,13 @@
+{{define "main"}}
+{{ $index := .Params.index }}
+<div id="main">
+
+    <div class="sceneElement" data-viewport="{{ $index }}">
+        {{ partial "fullpage.html" . }}
+    </div>
+
+
+    {{ partial "navigation.html" . }}
+
+</div>
+{{end}}

@@ -1,3 +1,4 @@
+{{$index := .Params.index}}
 <div id="fullpage" style="background:black; color:white;">
     <div class="section home">
         <div class="container home mobile-container">
@@ -8,7 +9,13 @@
                 <div class="col-md-1 d-md-block d-none">
                     <img src="{{ "images/SVG/Asset%201.svg" | absURL }}" class="line">
                 </div>
-                <div class="col-6 mx-auto d-md-none d-block"><hr class="Horizont"></div>
+                <div class="col d-md-none d-block">
+                    <div class="row">
+                        <div class="col" style="text-align: right">{{ with .Params.left }}<div id="arrowLeft"><a id="href_prev" href="{{.}}" data-target="{{sub $index 1}}" ><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></a></div>{{end}}</div>
+                        <div class="col-6"><hr class="Horizont"></div>
+                        <div class="col">{{ with .Params.right }}<div id="arrowRight"><a id="href_next" href="{{.}}" data-target="{{add $index 1}}"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></a></div>{{end}}</div>
+                    </div>
+                </div>
                 <div class="col-md-5">
                     <div class="opis">
                         {{ .Content }}
@@ -18,8 +25,9 @@
         </div>
     </div>
 
-    {{ range .Pages.ByDate }}
 
+    {{ range .Pages.ByDate }}
+    
     {{ partial "verticalSlides.html" . }}
 
     {{end}}

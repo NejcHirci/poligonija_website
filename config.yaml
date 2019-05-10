@@ -1,0 +1,12 @@
+baseURL: 'https://poligonija.org/'
+LanguageCode: sl-SI
+Title: Poligonija
+
+permalinks:
+  scifi: '/scifi/:title/'
+  art_in_tech: '/art_in_tech/:title'
+  kozmonavtika: '/kozmonavtika/:title'
+
+params:
+  featured: '/art_in_tech'
+

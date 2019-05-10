@@ -1,0 +1,31 @@
+{{ $index := .Params.index }}
+{{ $posts := (len .Pages)}}
+<div id="about"><a href="/o-nas">O nas</a></div>
+<div id="mainLogo"><span style="font-family: Lora;color:white;">POLIGONIJA</span></div>
+<div id="social"><a href="https://www.facebook.com/Poligonija-382655652330224/" ><i class="fab fa-facebook-f" style="margin-right: 15px"></i></a><a href="https://www.instagram.com/poligonija/" ><i class="fab fa-instagram"></i></a></div>
+{{ with .Params.left }}<div class="d-none d-md-block" id="arrowLeft"><a id="href_prev" href="{{.}}" data-target="{{sub $index 1}}" ><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></a></div>{{end}}
+{{ with .Params.right }}<div class="d-none d-md-block" id="arrowRight"><a id="href_next" href="{{.}}" data-target="{{add $index 1}}"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></a></div>{{end}}
+{{ if gt $posts 0 }}<div id="arrowDown"><img src="{{ "images/SVG/arrow-down.svg" | absURL }}" id="arrow"></div>{{end}}
+
+<script>
+    $('#arrowDown').click(function(){
+        $.fn.fullpage.moveSectionDown();
+    });
+    $('#mainLogo').click(function () {
+        $.fn.fullpage.moveTo(1);
+    });
+
+    $(window).keydown(function (e) {
+        if ( e.which === 37 ) {
+            $('#href_prev').click();
+        } else if ( e.which === 39 ) {
+            $('#href_next').click();;
+        }
+    });
+    $(document).on('swipeleft', function (e) {
+        $('#href_prev').click();
+    });
+    $(document).on('swiperight', function (e) {
+        $('#href_next').click();
+    });
+</script>

@@ -17,12 +17,16 @@
                 if (origin.index == 0 && direction == 'down') {
                     $('#fp-nav').delay(400).fadeIn(500);
                     $('#arrowDown').fadeOut(200);
+                    $('#arrowLeft').fadeOut(200);
+                    $('#arrowRight').fadeOut(200);
                     jQuery("#mainLogo span").animate({color: "#000000"}, 600);
                     jQuery("#about a").animate({color: "#000000"}, 600);
                     jQuery("#social i").animate({color: "#000000"}, 600);
                 } else if (destination.index == 0 && direction == 'up') {
                     $('#fp-nav').fadeOut(200);
                     $('#arrowDown').delay(400).fadeIn(500);
+                    $('#arrowLeft').delay(400).fadeIn(500);
+                    $('#arrowRight').delay(400).fadeIn(500);
                     jQuery("#mainLogo span").animate({color: "#ffffff"}, 600);
                     jQuery("#about a").animate({color: "#ffffff"}, 600);
                     jQuery("#social i").animate({color: "#ffffff"}, 600);
@@ -35,13 +39,6 @@
 
         fullpage_init();
 
-        $('#arrowDown').click(function(){
-            $.fn.fullpage.moveSectionDown();
-        });
-        $('#mainLogo').click(function () {
-            $.fn.fullpage.moveTo(1);
-        });
-
         // Init here.
         var $body = $('body'),
             $main = $('#main'),
@@ -53,14 +50,14 @@
             onBefore: function($anchor, $container) {
                 var current = $('[data-viewport]').first().data('viewport'),
                     target = $anchor.data('target');
-                current = current ? current : 0;
-                target = target ? target : 0;
-                if (current === target) {
-                    transition = 'fade';
-                } else if (current < target) {
-                    transition = 'moveright';
+                if (current != null && target != null) {
+                    if (current < target) {
+                        transition = 'moveright';
+                    } else if (current > target) {
+                        transition = 'moveleft';
+                    }
                 } else {
-                    transition = 'moveleft';
+                    transition = 'fade';
                 }
             },
             onStart: {
@@ -69,6 +66,9 @@
                     $main.attr('data-transition', transition);
                     $main.addClass('is-exiting');
                     $site.animate({scrollTop: 0});
+                    $('#arrowDown').fadeOut(200);
+                    $('#arrowLeft').fadeOut(200);
+                    $('#arrowRight').fadeOut(200);
                 }
             },
             onReady: {
@@ -79,7 +79,7 @@
                     $.fn.fullpage.destroy('all');
                     fullpage_init();
                 }
-            },
+            }
         }).data('smoothState');
     });
 
