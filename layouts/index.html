@@ -2,7 +2,7 @@
 {{ $featured := .Site.GetPage .Site.Params.featured }}
 {{ $index := 0 }}
 {{ $title := $featured.Title }}
-{{ $tag := $featured.Params.tag }}
+{{ $type := $featured.Params.tag }}
 {{ $right := $featured.Params.right }}
 {{ $opis := $featured.Content }}
 
@@ -33,8 +33,7 @@
                     </div>
                 </div>
             </div>
-
-            {{ range (where .Pages "Sections" $tag).ByDate }}
+            {{ range (where .Site.RegularPages "Section" "eq" $type) }}
 
                 {{ partial "verticalSlides.html" . }}
 

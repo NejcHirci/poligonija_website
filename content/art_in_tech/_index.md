@@ -4,6 +4,7 @@ date: 2019-04-30T20:13:46+02:00
 draft: false
 url: "/art_in_tech"
 tag: "art_in_tech"
+left: "/"
 right: "/kozmonavtika"
 index: 0
 ---

@@ -1,7 +1,7 @@
 ---
 title: sultana
 name: "Sultanine sanje"
-date: 2019-03-25T15:08:14+01:00
+date: 2019-04-10T15:08:14+01:00
 draft: false
 type: "scifi"
 author: "Rokeyea Skahawat Hossain, prev. Martin Justin"
@@ -18,6 +18,12 @@ synopsis2: "Kar naenkrat pa je pred mano stala ženska. Ne vem, kako je vstopila
      »Dobro jutro,« je rekla sestra Sara. Sama pri sebi sem se nasmehnila, bila je namreč zvezdnata noč, ne jutro. Vseeno sem ji odgovorila, rekoč: »Kako si?«
 	»V redu, hvala. Bi stopila ven in si ogledala naš vrt?« 
 </p>
+<aside class="col-md-7 singleMargin mx-auto" style="float:right;">
+    <figure>
+      <img class="img-fluid" src="/images/scifi/sultana_cb.jpg" alt="Interpretacija dela Sultanine sanje"/>
+      <figcaption style="text-align:center;font-size:14px">Avtorica ilustracije: Urša Godina</figcaption>
+    </figure>
+</aside>
 <p class="singleMargin">
 	Skozi odprto okno sem ponovno pogledala luno in ugotovila, da se ob tem času zunaj ne more zgoditi nič slabega. Služabniki so namreč trdno spali in s sestro Saro bi lahko šli na prijeten sprehod.
 	Ko smo bili v Darjeelingu, sva se s sestro pogosto tako sprehajali. Držali sva se za roke in se med hojo po botaničnih vrtovih sproščeno pogovarjali. Ugibala sem, da me bo sestra peljala na podoben vrt in brez oklevanja sprejela njen predlog.
