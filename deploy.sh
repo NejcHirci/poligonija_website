@@ -6,6 +6,8 @@ git pull
 hugo --ignoreCache # if using a theme, replace with `hugo -t <YOURTHEME>`
 # Go To Public folder
 cd public
+# Update rep
+git pull
 # Add changes to git.
 git add .
 # Commit changes.
