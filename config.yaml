@@ -7,7 +7,8 @@ permalinks:
   art_in_tech: '/art_in_tech/:title'
   kozmonavtika: '/kozmonavtika/:title'
   cyberpunk: '/cyberpunk/:title'
+  junij_predavanje: '/junij_predavanje/:title'
 
 params:
-  featured: '/cyberpunk'
+  featured: '/junij_predavanje'
 
