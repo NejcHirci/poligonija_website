@@ -3,7 +3,7 @@ title: "moxyland"
 date: 2019-07-05T11:05:06+02:00
 draft: false
 name: "Moxyland (poglavje Kendra)"
-type: "scifi"
+type: "cyberpunk"
 author: "Lauren Beukes, prev. Nastja Uršula Virk"
 synopsis1: "Ko pridem do Propellerja, se morje ljudi že širi preko vrat, kar je lahko zgolj dober znak, saj je pravkar odbilo šest trideset. Pozna si. Jonathan se na vratih oklene moje roke in skozi množico zvizneva noter. Ne morem verjeti, koliko ljudi je tu, nagnetenih v galeriji. "
 synopsis2: "Pozna si. Jonathan se na vratih oklene moje roke in skozi množico zvizneva noter. Ne morem verjeti, koliko ljudi je tu, nagnetenih v galeriji. Vrsta se vije po stopnicah, da bi videli Atomski mobilnik Johannesa Michaela, a ta ogromna gneča je v glavni sobi"

@@ -1,10 +1,11 @@
 ---
-title: "porocilo"
-date: 2019-05-01T14:33:46+02:00
+title: "porocilo_kozmonavtika"
+date: 2019-07-13T16:27:13+02:00
 draft: false
 name: "V osrčju kozmonavtske kinematografije"
-type: "scifi"
+type: "vsi"
 author: "Romana Ronkali"
+subURL: "/kozmonavtika"
 synopsis1: "Ob dnevu kozmonavtike je bil v Pritličju organiziran pogovor z gosti. Natalija Majsova in Anja Banko sta govorili o znanstvenofantastični kinematografiji, prva z izrazito kulturološkim pogledom, druga pa s pogledom filmske kritičarke. Dragan Živadinov in Blaž Šef sta kot gledališka kolega prevzela umetniško stališče, Kristina Pranjić je kot komparativistka z doktorsko nalogo iz kozmizma pokrila osnovne pojme, Miha Javornik pa se je kot profesor ruske literature oprl na avantgardo in mitologizacijo."
 synopsis2: "Velik del kozmonavtike je zaznamovala hladna vojna, ki se je zrcalila v kolonialističnem pristopu k osvajanju kozmosa in ne toliko raziskovanju le-tega. Po hladni vojni je zanimanje za kozmos upadlo, a ponovno začelo naraščati zaradi podjetnikov, ki so vesolje videli kot prostor, kamor bi širili lovke kapitalizma. "
 ---
@@ -59,3 +60,5 @@ synopsis2: "Velik del kozmonavtike je zaznamovala hladna vojna, ki se je zrcalil
     »Da.«
     Kar je dovolj, da ga obravnavajo kot sebi enakopravnega. Saj je rekel, da je človek, kajne? <a href="https://www.youtube.com/watch?v=kpYD0jSvHlo&t=5s">Povezava na posnetek dogodka.</a>
 </p>
+
+

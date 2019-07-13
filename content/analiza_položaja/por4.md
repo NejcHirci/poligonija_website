@@ -1,9 +1,10 @@
 ---
-title: "Romana"
-date: 2019-07-05T11:06:41+02:00
+title: "porocilo_kiberpank"
+date: 2019-07-13T16:27:11+02:00
 draft: false
 name: "Tehno-urbani gverilski bojevniki: Pod digitalnim dežjem kiberpanka"
-type: "cyberpunk"
+type: "vsi"
+subURL: "/cyberpunk"
 author: "Romana Ronkali"
 synopsis1: "Utripajoče neonske luči, piskanje računalnikov, vrtoglavo visoke stolpnice, nenehni zvoki prometa in tovarniški dim, ki ustvarja sive oblake na jasnem nebu; to je slika distopičnega pogleda sedanjosti in prihodnosti, ki nas, sodeč po bliskovitem razvoju tehnologije, še čaka. To ni več svet ljudi, to je svet robotov, umetne inteligence in zatona narave. "
 synopsis2: "Besedo kiberpank (cyberpunk) je leta 1980 skoval računalničar Bruce Bethke. S svojim delom Kiberpank (Cyberpunk) je podaril kiberpankovskemu gibanju ime, s katerim je poimenoval skupino mladih, za katere je predvideval, da bodo uspeli uporabljati sodobno tehnologijo za namene, ki jih le-ta takrat še ni predvidevala."

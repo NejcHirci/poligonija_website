@@ -10,6 +10,11 @@
                 <h2 class="names">{{.Params.Author}}</h2>
             </div>
         </div>
+        <div class="row authors">
+            <div class="col-md-12">
+                {{with .Params.subURL}}<a href="{{.}}"><h2 class="names">PODSTRAN</h2></a>{{end}}
+            </div>
+        </div>
         <div class="row short-content">
             <div class="col-md-12" style="min-height: 160px;">
                 <h2 class="text text-left">
