@@ -8,11 +8,10 @@ author: "Romana Ronkali"
 synopsis1: "Utripajoče neonske luči, piskanje računalnikov, vrtoglavo visoke stolpnice, nenehni zvoki prometa in tovarniški dim, ki ustvarja sive oblake na jasnem nebu; to je slika distopičnega pogleda sedanjosti in prihodnosti, ki nas, sodeč po bliskovitem razvoju tehnologije, še čaka. To ni več svet ljudi, to je svet robotov, umetne inteligence in zatona narave. "
 synopsis2: "Besedo kiberpank (cyberpunk) je leta 1980 skoval računalničar Bruce Bethke. S svojim delom Kiberpank (Cyberpunk) je podaril kiberpankovskemu gibanju ime, s katerim je poimenoval skupino mladih, za katere je predvideval, da bodo uspeli uporabljati sodobno tehnologijo za namene, ki jih le-ta takrat še ni predvidevala."
 ---
-
 <aside class="col-md-12 singleMargin mx-auto">
     <figure>
-      <img class="img-fluid greyscale-img" src="/images/art_in_tech/banner.jpg" alt="Plakat dogodka"/>
-      <figcaption style="text-align:center;font-size:14px">Avtor ilustracije: Tschimy Obenga</figcaption>
+      <img class="img-fluid" src="/images/cyberpunk/banner.jpg" alt="Plakat dogodka"/>
+      <figcaption style="text-align:center;font-size:14px">Avtorica ilustracije: Urša Godina</figcaption>
     </figure>
 </aside>
 <p class="singleMargin intro">

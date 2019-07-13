@@ -8,7 +8,8 @@ permalinks:
   kozmonavtika: '/kozmonavtika/:title'
   cyberpunk: '/cyberpunk/:title'
   junij_predavanje: '/junij_predavanje/:title'
+  vsi: '/analiza_položaja/:title'
 
 params:
-  featured: '/junij_predavanje'
+  featured: '/analiza_položaja'
 

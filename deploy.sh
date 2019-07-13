@@ -6,8 +6,8 @@ git pull
 hugo --ignoreCache # if using a theme, replace with `hugo -t <YOURTHEME>`
 # Go To Public folder
 cd public
-# Update rep
-git pull
+# checkout Master
+git checkout master
 # Add changes to git.
 git add .
 # Commit changes.
@@ -17,6 +17,9 @@ if [[ $# -eq 1 ]]
 fi
 git commit -m "$msg"
 # Push source and build repos.
-git push origin master
+git push
 # Come Back up to the Project Root
 cd ..
+git checkout development
+git add public
+git commit -m "Updated submodule"

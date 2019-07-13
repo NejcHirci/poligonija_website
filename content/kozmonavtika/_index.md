@@ -6,7 +6,7 @@ url: "/kozmonavtika"
 tag: "kozmonavtika"
 left: "/art_in_tech"
 right: "/scifi"
-index: 3 
+index: 4
 ---
 
 Ob dnevu kozmonavtike se bomo spraševali o pomenu vizije znanstvene fantastike in filozofskih razmišljanj ruskega kozmizma, ki so navdahnila vodilne kozmonavte. 

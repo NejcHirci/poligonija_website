@@ -6,7 +6,7 @@ url: "/art_in_tech"
 tag: "art_in_tech"
 left: "/cyberpunk"
 right: "/kozmonavtika"
-index: 2
+index: 3
 ---
 
 V sklopu predavanj štirih študentov, sodelujočih pri projektu Poligonija, si bomo pobližje ogledali nekatera stična področja umetnosti in tehnologije. 

@@ -8,12 +8,6 @@ author: "Martin Justin"
 synopsis1: "S to precej zvenečo oznako je bilo v zadnjih desetletjih poimenovanih veliko stvari: od precej širokega in barvitega spektra znanstvenofantastičnih zgodb in romanov, filmov in televizijskih serij, animejev in mang do računalniških iger ter glasbe."
 synopsis2: "Kot glavne primerke kiberpanka se verjetno največkrat navaja Scottovega Blade Runnerja (1982), roman Williama Gibsona Neuromancer (1984), ki velja tudi za prvi polnokrvni kiberpankovski roman, pa antologijo Mirrorshades: The Cyberpunk Anthology (1986), ki jo je uredil Bruce Sterling, animiran film Akira (1988) japonskega režiserja Katsuhiro Otoma, trilogijo The Matrix (1999–2003) bratov Wachowski, v zadnjem času pa Netflixovo serijo Altered Carbon (2018) in prihajajočo videoigro Cyberpunk 2077 poljskega proizvajalca CD Projekt Red."
 ---
-<aside class="col-md-12 singleMargin mx-auto">
-    <figure>
-      <img class="img-fluid" src="/images/cyberpunk/banner.jpg" alt="Plakat dogodka"/>
-      <figcaption style="text-align:center;font-size:14px">Avtorica ilustracije: Urša Godina</figcaption>
-    </figure>
-</aside>
 <p class="singleMargin intro">
 <span class="first-char">S</span> to precej zvenečo oznako je bilo v zadnjih desetletjih poimenovanih veliko stvari: od precej širokega in barvitega spektra znanstvenofantastičnih zgodb in romanov, filmov in televizijskih serij, animejev in mang do računalniških iger ter glasbe. Kot glavne primerke kiberpanka se verjetno največkrat navaja Scottovega Blade Runnerja (1982), roman Williama Gibsona Neuromancer (1984), ki velja tudi za prvi polnokrvni kiberpankovski roman, pa antologijo Mirrorshades: The Cyberpunk Anthology (1986), ki jo je uredil Bruce Sterling, animiran film Akira (1988) japonskega režiserja Katsuhiro Otoma, trilogijo The Matrix (1999–2003) bratov Wachowski, v zadnjem času pa Netflixovo serijo Altered Carbon (2018) in prihajajočo videoigro Cyberpunk 2077 poljskega proizvajalca CD Projekt Red. Je ta seznam najbolj znanih del upravičen ali kakorkoli reprezentativen? Lahko kiberpank reduciramo na posebno estetiko, tisto dobro poznano iz Bladerunnerja? Gre v resnici za revolucionarno umetniško gibanje z močnim političnim nabojem, ki se je v neki točki spremenilo v komoditeto kulturne potrošnje? Gre zgolj za podžanr znanstvene fantastike?
 </p>
