@@ -2,7 +2,7 @@
 title: "nastja"
 date: 2019-07-13T10:48:52+02:00
 draft: false
-name: "TEHNOLOGIJA; KONKRETIZACIJA MITOLOŠKO-LITERARNIH MOTIVOV?"
+name: "Tehnologija; Konkretizacija mitološko-literarnih motivov?"
 type: "art_in_tech"
 author: "Nastja Uršula Virk"
 synopsis1: "Že v sklopu prejšnjih dogodkov, na literarnem večeru Sci-Fi in konec prihodnosti ter na pogovoru ob Dnevu kozmonavtike, je v ospredje prihajala ideja, da je tehnološki napredek med drugim posledica idej, ki se prenašajo skozi literaturo oz. umetnost (sledovi proto-robotov in potovanja v vesolje dolgo preden je človeštvu tehnologija to dovoljevala; ideja Ciolkovskega, ki predpostavlja, da fikcija vedno obstaja pred resničnostjo, nasploh pa je bil celoten pogovor usmerjen v idejo, da je kozmonavtika produkt ruske kozmistične, suprematistične in konstruktivistične misli)."
